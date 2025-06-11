@@ -1,9 +1,0 @@
---- a/original_code.c
-+++ b/original_code.c
-@@ -1,5 +1,6 @@
- static void lhsx(void) {
-   int i, j, k;
-+#pragma omp parallel for collapse(2) private(i, tmp1, tmp2, tmp3)
-   for (j = 1; j < grid_points[1]-1; j++) {
-     for (k = 1; k < grid_points[2]-1; k++) {
-       for (i = 0; i < grid_points[0]; i++) {

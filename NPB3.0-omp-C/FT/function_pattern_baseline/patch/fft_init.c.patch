@@ -1,9 +1,0 @@
---- /dev/null
-+++ /dev/null
-@@ -10,5 +10,6 @@
-     for (j = 1; j <= m; j++) {
- 	t = PI / ln;
-+#pragma omp parallel for default(shared) private(i, ti)
- 	for (i = 0; i <= ln - 1; i++) {
-             ti = i * t;
-             u[i+ku].real = cos(ti);

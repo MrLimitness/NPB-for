@@ -7,7 +7,7 @@ c  in this directory. Do not modify it by hand.
 #define	CLASS	 'S'
 #define	M	24
 #define	CONVERTDOUBLE	FALSE
-#define COMPILETIME "07 May 2025"
+#define COMPILETIME "11 May 2025"
 #define NPBVERSION "3.0 structured"
 #define CS1 "gcc"
 #define CS2 "gcc"

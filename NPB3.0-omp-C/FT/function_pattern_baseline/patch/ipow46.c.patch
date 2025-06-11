@@ -1,9 +1,0 @@
---- a/original_file.c
-+++ b/modified_file.c
-@@ -17,5 +17,6 @@
- 	}
-     }
-     dummy = randlc(&r, q);
-+#pragma omp critical
-     *result = r;
- }

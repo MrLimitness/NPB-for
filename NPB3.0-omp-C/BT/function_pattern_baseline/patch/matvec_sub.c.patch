@@ -1,9 +1,0 @@
---- a/original_code.c
-+++ b/parallel_code.c
-@@ -1,5 +1,6 @@
- static void matvec_sub(double ablock[5][5], double avec[5], double bvec[5]) {
-   int i;
-+#pragma omp parallel for
-   for (i = 0; i < 5; i++) {
-     bvec[i] = bvec[i] - ablock[i][0]*avec[0]
-       - ablock[i][1]*avec[1]

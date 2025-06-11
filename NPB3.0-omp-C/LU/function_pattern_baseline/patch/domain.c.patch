@@ -1,8 +1,0 @@
---- a/original.c
-+++ b/modified.c
-@@ -1,5 +1,6 @@
- static void domain(void) {
-+#pragma omp master
-   nx = nx0;
-   ny = ny0;
-   nz = nz0;

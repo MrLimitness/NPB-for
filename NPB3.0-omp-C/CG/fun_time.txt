@@ -1,5 +1,0 @@
-conj_grad: 34.725746
-makea: 0.484387
-sparse: 0.256454
-sprnvc: 0.123905
-vecset: 0.002082

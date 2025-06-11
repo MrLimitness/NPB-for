@@ -1,7 +1,0 @@
-static void rep_nrm(double ***u, int n1, int n2, int n3,
-		    char *title, int kk) {
-    double rnm2, rnmu;
-    norm2u3(u,n1,n2,n3,&rnm2,&rnmu,nx[kk],ny[kk],nz[kk]);
-    printf(" Level%2d in %8s: norms =%21.14e%21.14e\n",
-	   kk, title, rnm2, rnmu);
-}
