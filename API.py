@@ -37,7 +37,7 @@ def sys_question(sys_prompt, prompt, max_retries=5, retry_delay=5):
     while retries < max_retries:
         try:
             response = openai.chat.completions.create(
-                model='deepseek-ai/DeepSeek-R1',  
+                model='deepseek-ai/DeepSeek-V3',  
                 messages=[
                     {"role":"system","content":sys_prompt},
                     {"role": "user", "content": prompt}
