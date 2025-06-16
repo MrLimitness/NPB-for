@@ -4,7 +4,7 @@ import subprocess
 import re
 from extract_for import extract_for_loops_from_content
 
-base_dir = "D:\\New_NPB"
+base_dir = os.environ.get('BASE_DIR', os.getcwd())
 NPB_dir = f"{base_dir}/NPB3.0-omp-C"
 
 

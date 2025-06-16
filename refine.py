@@ -63,7 +63,7 @@ def main():
     args = parser.parse_args()
 
     # 设置基础目录和 prompt 文件路径
-    base_dir = "D:\\New_NPB"
+    base_dir = os.environ.get('BASE_DIR', os.getcwd())
     prompt_file = f"{base_dir}/prompt/refine.txt"
 
     # 读取 prompt 模板

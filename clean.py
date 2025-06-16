@@ -30,16 +30,16 @@ def clean_folders():
         "LU": [3, 5, 6, 7, 9, 12, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 38, 39, 40, 41, 42, 43, 44, 46, 47, 48, 49],
         "MG": [1, 2, 3, 4, 5, 7, 8, 17, 18, 19, 20, 22, 25, 26, 27, 28, 29, 30]
     }
-    
+    base_dir = os.environ.get('BASE_DIR', os.getcwd())
     # NPB基准程序路径
     npb_dirs = [
-        "D:\\New_NPB\\NPB3.0-omp-C\\BT",
-        "D:\\New_NPB\\NPB3.0-omp-C\\CG", 
-        "D:\\New_NPB\\NPB3.0-omp-C\\EP",
-        "D:\\New_NPB\\NPB3.0-omp-C\\FT",
-        "D:\\New_NPB\\NPB3.0-omp-C\\LU",
-        "D:\\New_NPB\\NPB3.0-omp-C\\MG",
-        "D:\\New_NPB\\NPB3.0-omp-C\\SP"
+        os.path.join(base_dir, "NPB3.0-omp-C", "BT"),
+        os.path.join(base_dir, "NPB3.0-omp-C", "CG"), 
+        os.path.join(base_dir, "NPB3.0-omp-C", "EP"),
+        os.path.join(base_dir, "NPB3.0-omp-C", "FT"),
+        os.path.join(base_dir, "NPB3.0-omp-C", "LU"),
+        os.path.join(base_dir, "NPB3.0-omp-C", "MG"),
+        os.path.join(base_dir, "NPB3.0-omp-C", "SP")
     ]
     
     total_removed = 0

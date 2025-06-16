@@ -1,0 +1,18 @@
+NPB For Loop Extraction Summary
+==================================================
+
+Total files processed: 7
+Total loops extracted: 296
+
+Individual Results:
+------------------------------
+BT: 69 loops
+CG: 24 loops
+EP: 8 loops
+FT: 26 loops
+LU: 49 loops
+MG: 30 loops
+SP: 90 loops
+
+All loops saved to: for_origin/
+Each benchmark has its own subdirectory with numbered C files (1.c, 2.c, etc.)

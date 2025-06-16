@@ -63,7 +63,7 @@ def main():
     )
     args = parser.parse_args()
 
-    base_dir = "D:\\New_NPB"
+    base_dir = os.environ.get('BASE_DIR', os.getcwd())
     prompt_file = f"{base_dir}/prompt/0.txt"
     
     with open(prompt_file, 'r') as f:

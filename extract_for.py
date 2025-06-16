@@ -242,14 +242,15 @@ def process_all_npb_files(base_output_dir="for_origin"):
     Returns:
         dict: 处理结果统计
     """
+    base_dir = os.environ.get('BASE_DIR', os.getcwd())
     npb_files = [
-        "D:\\New_NPB\\NPB3.0-omp-C\\BT\\bt_#_omp.c",
-        "D:\\New_NPB\\NPB3.0-omp-C\\CG\\cg_#_omp.c",
-        "D:\\New_NPB\\NPB3.0-omp-C\\EP\\ep_#_omp.c",
-        "D:\\New_NPB\\NPB3.0-omp-C\\FT\\ft_#_omp.c",
-        "D:\\New_NPB\\NPB3.0-omp-C\\LU\\lu_#_omp.c",
-        "D:\\New_NPB\\NPB3.0-omp-C\\MG\\mg_#_omp.c",
-        "D:\\New_NPB\\NPB3.0-omp-C\\SP\\sp_#_omp.c"
+        os.path.join(base_dir, "NPB3.0-omp-C", "BT", "bt_#_omp.c"),
+        os.path.join(base_dir, "NPB3.0-omp-C", "CG", "cg_#_omp.c"),
+        os.path.join(base_dir, "NPB3.0-omp-C", "EP", "ep_#_omp.c"),
+        os.path.join(base_dir, "NPB3.0-omp-C", "FT", "ft_#_omp.c"),
+        os.path.join(base_dir, "NPB3.0-omp-C", "LU", "lu_#_omp.c"),
+        os.path.join(base_dir, "NPB3.0-omp-C", "MG", "mg_#_omp.c"),
+        os.path.join(base_dir, "NPB3.0-omp-C", "SP", "sp_#_omp.c")
     ]
 
     results = {}
